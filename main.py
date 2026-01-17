@@ -4,18 +4,13 @@ HF timeseries processing script
 Originally from: https://colab.research.google.com/drive/1C9o5nYQuFESdc5v2fjUAzHB399ZI4QZV
 """
 
-import sys
 import os
-import json
 import time
 import dataclasses
 import pandas as pd
 import gspread
 import plotly.express as px
 import plotly.graph_objects as go
-import dash
-from dash import html
-from dash import dcc
 
 # -----------------------------------------------------------------------------
 # Configuration & Data Structures
