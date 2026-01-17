@@ -1,0 +1,11 @@
+[project]
+name = "hf-positions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gspread>=6.2.1",
+    "pandas>=2.3.3",
+    "plotly>=6.5.2",
+]
