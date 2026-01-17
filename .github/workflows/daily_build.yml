@@ -21,8 +21,10 @@ jobs:
         run: uv sync
 
       - name: Setup Credentials
+        env:
+          GSPREAD_CREDENTIALS: ${{ secrets.GSPREAD_CREDENTIALS }}
         run: |
-          echo "${{ secrets.GSPREAD_CREDENTIALS }}" > positionsdownloader-b257900bcaa5.json
+          echo "$GSPREAD_CREDENTIALS" > positionsdownloader-b257900bcaa5.json
 
       - name: Run script
         run: uv run main.py
