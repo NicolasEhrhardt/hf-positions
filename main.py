@@ -58,6 +58,7 @@ def build_figs_for_params(params: Params, gc_client):
         print(f"Processing worksheet: {worksheet.title}")
         df = pd.DataFrame(worksheet.get_all_records())
         df['date'] = worksheet.title
+        time.sleep(0.5)
 
         all_df.append(df)
     
@@ -105,9 +106,6 @@ def main():
     # Generate Figures
     print("Generating Figure 1...")
     fig1 = build_figs_for_params(params[0], gc)
-    
-    print("Waiting before generating Figure 2...")
-    time.sleep(5)
     
     print("Generating Figure 2...")
     fig2 = build_figs_for_params(params[1], gc)
