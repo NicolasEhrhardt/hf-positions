@@ -107,7 +107,6 @@ def main():
     fig1 = build_figs_for_params(params[0], gc)
     
     print("Waiting before generating Figure 2...")
-    time.sleep(15) # Add a substantial delay between generating the first and second figure
     
     print("Generating Figure 2...")
     fig2 = build_figs_for_params(params[1], gc)
