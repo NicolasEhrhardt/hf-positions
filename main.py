@@ -58,7 +58,7 @@ def build_figs_for_params(params: Params, gc_client):
         print(f"Processing worksheet: {worksheet.title}")
         df = pd.DataFrame(worksheet.get_all_records())
         df['date'] = worksheet.title
-        time.sleep(0.5)
+        time.sleep(1)
 
         all_df.append(df)
     
